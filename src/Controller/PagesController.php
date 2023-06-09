@@ -27,12 +27,4 @@ class PagesController extends AbstractController
         ]);
     }
 
-    #[Route('/mention-legales', name: 'page_mentions_legales')]
-    public function mentionLegales(): Response
-    {
-        return $this ->render('pages/index.html.twig', [
-            'controller_name'=> 'PagesController',
-            'title' =>'Mentions legales',
-        ]);
-    }
 }
